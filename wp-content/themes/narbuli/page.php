@@ -15,21 +15,25 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<div id="rec477833266" class="r t-rec t-rec_pt_30 t-rec_pb_60 r_showed r_anim" style="padding-top:30px;padding-bottom:60px; " data-record-type="106">
+		<!-- T004 -->
+		<div class="t004">
+			<div class="t-container ">
+				<div class="t-col t-col_10 t-prefix_1">
+					<div field="text" class="t-text t-text_md">
+						<?php
+						while ( have_posts() ) :
+							the_post();
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+							the_content();
 
-			the_content();
-
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+						endwhile; // End of the loop.
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 <?php
-get_sidebar();
 get_footer();

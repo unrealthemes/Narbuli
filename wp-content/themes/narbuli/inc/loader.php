@@ -91,7 +91,17 @@ class UT_Theme_Helper {
   	// ========================================= CSS ========================================= //
   	wp_enqueue_style( 'ut-style', get_stylesheet_uri() );
   	// wp_enqueue_style( 'ut-main', get_template_directory_uri() . '/styles/main.css' );
-  	wp_enqueue_style( 'ut-woo', get_template_directory_uri() . '/styles/woocommerce.css' );
+  	// wp_enqueue_style( 'ut-woo', get_template_directory_uri() . '/styles/woocommerce.css' );
+  	// wp_enqueue_style( 'tilda-blocks-page27234823', 'https://ws.tildacdn.com/project537641/tilda-blocks-page27234823.min.css?t=1660056690' );
+
+  	wp_enqueue_style( 'tilda-animation', get_template_directory_uri() . '/styles/tilda/tilda-animation-1.0.min.css' );
+  	wp_enqueue_style( 'tilda-blocks', get_template_directory_uri() . '/styles/tilda/tilda-blocks-page27234823.min.css' );
+  	wp_enqueue_style( 'tilda-forms', get_template_directory_uri() . '/styles/tilda/tilda-forms-1.0.min.css' );
+  	wp_enqueue_style( 'tilda-grid', get_template_directory_uri() . '/styles/tilda/tilda-grid-3.0.min.css' );
+  	wp_enqueue_style( 'tilda-popup', get_template_directory_uri() . '/styles/tilda/tilda-popup-1.1.min.css' );
+  	wp_enqueue_style( 'tilda-slds', get_template_directory_uri() . '/styles/tilda/tilda-slds-1.4.min.css' );
+  	wp_enqueue_style( 'tilda-zoom', get_template_directory_uri() . '/styles/tilda/tilda-zoom-2.0.min.css' );
+  	wp_enqueue_style( 'swiper', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
   	// ========================================= JS ========================================= //
   	//////////////////////////////////////
   	wp_deregister_script('jquery-core');
@@ -99,15 +109,34 @@ class UT_Theme_Helper {
   	wp_deregister_script('jquery');
   	wp_register_script('jquery', false, array('jquery-core'), null, true);
   	//////////////////////////////////////
-  	wp_enqueue_script( 'ut-scripts', get_template_directory_uri() . '/scripts/scripts.js', array('jquery'), date("Ymd"), true );
+
+  	wp_enqueue_script( 'tildajs-hammer', get_template_directory_uri() . '/js/tilda/hammer.min.js', ['jquery'], date("Ymd"), false );
+  	// wp_enqueue_script( 'tildajs-jquery', get_template_directory_uri() . '/js/tilda/jquery-1.10.2.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-lazyload', get_template_directory_uri() . '/js/tilda/lazyload-1.3.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-animation', get_template_directory_uri() . '/js/tilda/tilda-animation-1.0.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-animation-sbs', get_template_directory_uri() . '/js/tilda/tilda-animation-sbs-1.0.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-blocks', get_template_directory_uri() . '/js/tilda/tilda-blocks-page27234823.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-events', get_template_directory_uri() . '/js/tilda/tilda-events-1.0.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-forms', get_template_directory_uri() . '/js/tilda/tilda-forms-1.0.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-menu', get_template_directory_uri() . '/js/tilda/tilda-menu-1.0.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'phone-mask', get_template_directory_uri() . '/js/jquery-mask.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-popup', get_template_directory_uri() . '/js/tilda/tilda-popup-1.0.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-scripts', get_template_directory_uri() . '/js/tilda/tilda-scripts-3.0.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-slds', get_template_directory_uri() . '/js/tilda/tilda-slds-1.4.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-stat', get_template_directory_uri() . '/js/tilda/tilda-stat-1.0.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-zero', get_template_directory_uri() . '/js/tilda/tilda-zero-1.0.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'tildajs-zoom', get_template_directory_uri() . '/js/tilda/tilda-zoom-2.0.min.js', ['jquery'], date("Ymd"), false );
+  	wp_enqueue_script( 'swiperjs', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js', ['jquery'], date("Ymd"), false );
+
+  	wp_enqueue_script( 'ut-scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), date("Ymd"), true );
   	wp_localize_script( 'ut-scripts', 'ut_params', [
   	  'ajaxurl'    => admin_url( 'admin-ajax.php' ),
   	  'ajax_nonce' => wp_create_nonce('ut_check'),
   	] );
 
-  	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-  	  wp_enqueue_script( 'comment-reply' );
-  	}
+  	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+  	//   wp_enqueue_script( 'comment-reply' );
+  	// }
     // add_filter( 'script_loader_tag', [ $this, 'add_async_defer_attr' ], 10, 3 );
   }
 

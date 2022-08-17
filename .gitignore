@@ -1,0 +1,33 @@
+# Keep these files out of the repo
+/wp-content/themes/twenty*
+/wp-content/upgrade
+/wp-content/uploads
+/wp-content/advanced-cache.php
+/wp-content/ai1wm-backups/
+/wp-content/backup-db/
+/wp-content/backups/
+/wp-content/blogs.dir/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/uploads/
+/wp-content/languages
+/wp-content/wp-cache-config.php
+/sitemap.*
+/.idea*
+/.htaccess
+/wp-config.php
+*.sql
+*.log
+
+sitemap.xml
+sitemap.xml.gz
+
+# Hidden files
+*.DS_Store
+*Thumbs.db
+*.sass-cache*
+*~imageoptim*
+
+../bitbucket-pipelines.yml
+bitbucket-pipelines.yml
+wp-config-sample.php

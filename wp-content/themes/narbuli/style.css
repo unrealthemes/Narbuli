@@ -95,3 +95,148 @@ div.wpcf7-spam-blocked::after {
     border-left: 10px solid #ffa500;
 }
 /* END: Response cf7 */
+
+@media screen and (max-width: 980px) {
+    #rec439703513 .t967__leftcontainer{
+        padding: 20px;
+    }
+
+    #rec439703513 .t967__imglogo{
+        padding: 20px 0;
+    }
+
+    #rec439703513 .t967__mobile{
+        background-color: #ffffff;
+    }
+}
+
+#rec439703513 .t-menu__link-item {
+    -webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+    position: relative;
+}
+
+#rec439703513 .t-menu__link-item:not(.t-active):not(.tooltipstered)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 0px solid #2d3338;
+    -webkit-box-shadow: inset 0px -1px 0px 0px #2d3338;
+    -moz-box-shadow: inset 0px -1px 0px 0px #2d3338;
+    box-shadow: inset 0px -1px 0px 0px #2d3338;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#rec439703513 .t-menu__link-item.t-active:not(.t978__menu-link) {
+    color:#2d3338 !important; font-weight:300 !important; 
+}
+
+#rec439703513 .t-menu__link-item.t-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    bottom: -0px;
+    border-bottom: 0px solid #2d3338;
+    -webkit-box-shadow: inset 0px -1px 0px 0px #2d3338;
+    -moz-box-shadow: inset 0px -1px 0px 0px #2d3338;
+    box-shadow: inset 0px -1px 0px 0px #2d3338;
+}
+
+#rec439703513 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover{
+    color: #2d3338 !important; 
+}
+
+#rec439703513 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover::after{
+    opacity: 1;
+    bottom: -0px; 
+}
+
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+    #rec439703513 .t-menu__link-item,
+    #rec439703513 .t-menu__link-item.t-active {
+        opacity: 1 !important;
+    }
+}
+
+.t107 {
+    text-align: center;
+}
+
+.t-align_center {
+    text-align: center;
+}
+
+.t107__width {
+    vertical-align: middle;
+}
+
+.t-width_6 {
+    max-width: 560px;
+}
+
+.t-width {
+    width: 100%;
+}
+
+.t-text_md p {
+    padding: 15px 0;
+}
+
+.t-text_md p {
+    font-size: 20px;
+    line-height: 1.55;
+}
+
+.narbuli-form .t-input {
+    color: #2d3338;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.narbuli-form textarea.t-input {
+    height: 80px;
+}
+
+.narbuli-form .t-submit {
+    color: #2d3338;
+    background-color: #aedb01;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#rec439703526 .t396__artboard {
+    height: auto !important;
+}
+
+@media screen and (max-width: 479px) {
+    #rec439703526 .tn-elem[data-elem-id="1650599707413"] {
+        top: 920px !important;
+        left: 30px !important;
+    }
+}
+
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/static/Montserrat-Light.ttf") format("ttf");
+}
+
+.t-text p {
+    font-family: 'Montserrat',Arial,sans-serif;
+    font-weight: 400;
+    color: #000;
+}
