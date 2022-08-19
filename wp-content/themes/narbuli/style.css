@@ -221,6 +221,10 @@ div.wpcf7-spam-blocked::after {
     height: auto !important;
 }
 
+/* .hubspot-link__container {
+    display: none !important;
+} */
+
 @media screen and (max-width: 479px) {
     #rec439703526 .tn-elem[data-elem-id="1650599707413"] {
         top: 920px !important;
@@ -228,15 +232,26 @@ div.wpcf7-spam-blocked::after {
     }
 }
 
-
-
 @font-face {
-    font-family: "Montserrat";
-    src: url("fonts/Montserrat/static/Montserrat-Light.ttf") format("ttf");
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Light.woff2') format('woff2'),
+        url('fonts/Montserrat/static/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
-.t-text p {
-    font-family: 'Montserrat',Arial,sans-serif;
-    font-weight: 400;
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Regular.woff2') format('woff2'),
+        url('fonts/Montserrat/static/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.t-text {
+    font-family: 'Montserrat', -apple-system, system-ui, sans-serif;
+    font-weight: normal;
     color: #000;
 }

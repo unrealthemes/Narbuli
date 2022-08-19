@@ -8,7 +8,7 @@
                         <div class="t702__title t-title t-title_xxs" style="">Fill in the form</div>
                     </div>
                     
-                    <?php echo do_shortcode('[contact-form-7 id="56" title="Reserve retreat"]'); ?>
+                    <?php echo do_shortcode('[hubspot type=form portal=26073218 id=17ad4008-d1f6-4a39-b1de-1876c72af2e3]'); ?>
 
                     <style>#rec439703523 input::-webkit-input-placeholder {color:#2d3338; opacity: 0.5;}
                         #rec439703523 input::-moz-placeholder {color:#2d3338; opacity: 0.5;}

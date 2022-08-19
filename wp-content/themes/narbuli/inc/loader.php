@@ -56,9 +56,9 @@ class UT_Theme_Helper {
   public function register_hooks() {
 
     // Carbon fields lib
-    add_action( 'after_setup_theme', [ $this, 'carbon_fields_load' ] );
-    add_action( 'carbon_fields_register_fields', [ $this, 'include_register_fields' ] );
-    add_filter( 'carbon_fields_map_field_api_key', [ $this, 'get_gmaps_api_key' ] );
+    // add_action( 'after_setup_theme', [ $this, 'carbon_fields_load' ] );
+    // add_action( 'carbon_fields_register_fields', [ $this, 'include_register_fields' ] );
+    // add_filter( 'carbon_fields_map_field_api_key', [ $this, 'get_gmaps_api_key' ] );
 
   	add_action( 'wp_enqueue_scripts', [ $this, 'load_scripts_n_styles' ] );
   	add_action( 'after_setup_theme',  [ $this, 'register_menus' ] );
@@ -151,8 +151,8 @@ class UT_Theme_Helper {
 
   public function import() {
 
-  	include_once 'disable-editor.php';
-  	include_once 'pagination.php';
+  	// include_once 'disable-editor.php';
+  	// include_once 'pagination.php';
   	// include_once 'walker-nav-menu.php';
   	include_once 'template-functions.php';
   	// include_once 'woo-functions.php';
