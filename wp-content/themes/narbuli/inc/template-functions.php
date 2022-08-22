@@ -78,7 +78,7 @@ function ut_remove_footer_admin() {
 
     echo '<span id="footer-thankyou">Тема разработана <a href="https://unrealthemes.ru/" target="_blank"><img src="' . get_template_directory_uri() . '/img/unreal.png" width="130"/></a></span>';
 }
-add_filter('admin_footer_text', 'ut_remove_footer_admin');
+// add_filter('admin_footer_text', 'ut_remove_footer_admin');
 
 
 

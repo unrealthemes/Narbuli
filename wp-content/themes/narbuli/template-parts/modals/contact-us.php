@@ -8,10 +8,10 @@
                         <div class="t702__title t-title t-title_xxs" style="">Fill in the form</div>
                     </div>
 					
-					<?php echo do_shortcode('[hubspot type=form portal=26073218 id=fab7a099-a5e5-43bd-a4e0-96fef6033046]'); ?>
+					<?php // echo do_shortcode('[hubspot type=form portal=26073218 id=fab7a099-a5e5-43bd-a4e0-96fef6033046]'); ?>
 					
                     
-                    <?php //echo do_shortcode('[contact-form-7 id="57" title="Contact us"]'); ?>
+                    <?php echo do_shortcode('[contact-form-7 id="57" title="Contact us"]'); ?>
 
                     <style>#rec43970352100 input::-webkit-input-placeholder {color:#2d3338; opacity: 0.5;}
                         #rec43970352100 input::-moz-placeholder {color:#2d3338; opacity: 0.5;}

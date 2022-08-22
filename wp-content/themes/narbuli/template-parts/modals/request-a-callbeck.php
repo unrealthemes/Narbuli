@@ -8,7 +8,9 @@
                         <div class="t702__title t-title t-title_xxs" style="">Fill in the form to request a callback from our manager</div>
                     </div>
 
-                    <?php echo do_shortcode('[hubspot type=form portal=26073218 id=cdca8843-21c6-4230-a462-28cfe3e6d15d]'); ?>
+                    <?php // echo do_shortcode('[hubspot type=form portal=26073218 id=cdca8843-21c6-4230-a462-28cfe3e6d15d]'); ?>
+
+                    <?php echo do_shortcode('[contact-form-7 id="55" title="Request a callback"]'); ?>
 
                     <style>#rec439703514 input::-webkit-input-placeholder {color:#2d3338; opacity: 0.5;}
                         #rec439703514 input::-moz-placeholder {color:#2d3338; opacity: 0.5;}

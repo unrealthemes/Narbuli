@@ -2,7 +2,7 @@
 /**
 * Plugin Name: Integration for Contact Form 7 and HubSpot
 * Description: Integrates Contact Form 7 and <a href="https://wordpress.org/plugins/contact-form-entries/">Contact Form Entries Plugin</a> with HubSpot allowing form submissions to be automatically sent to your HubSpot account 
-* Version: 1.2.5
+* Version: 999 
 * Requires at least: 3.8
 * Tested up to: 6.0
 * Author URI: https://www.crmperks.com

@@ -225,6 +225,15 @@ div.wpcf7-spam-blocked::after {
     display: none !important;
 } */
 
+.payment-wrapper .t-input-group.t-input-group_nm,
+.payment-wrapper .t-title_xxs {
+    margin-bottom: 20px;
+}
+
+.payment-wrapper .t-submit {
+    width: 100%;
+}
+
 @media screen and (max-width: 479px) {
     #rec439703526 .tn-elem[data-elem-id="1650599707413"] {
         top: 920px !important;
