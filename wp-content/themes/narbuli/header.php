@@ -21,7 +21,7 @@ $header_menu_items = wp_get_nav_menu_items( $locations[ $menu_name ] );
 
 <body <?php body_class(); ?>>
 
-	<?php echo carbon_get_theme_option('aga_script'); ?>
+	<?php //echo carbon_get_theme_option('aga_script'); ?>
 
 	<div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="537641" data-tilda-page-id="27234823" data-tilda-page-alias="narbulihouse" data-tilda-formskey="e9398ca19c33a3b2f723b008eb44f765" data-tilda-lazy="yes" data-tilda-project-headcode="yes" style="overflow-x: hidden;">
 
